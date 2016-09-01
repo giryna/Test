@@ -33,39 +33,11 @@
       <file leaf-file-name="LoginSpecs.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/LoginSpecs.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignInPage.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/pages/SignInPage.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="153" selection-start-line="23" selection-start-column="153" selection-end-line="23" selection-end-column="153" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/utils/Utils.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeleniumExtensions.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/extensions/SeleniumExtensions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="263">
+              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+              <folding>
+                <element signature="e#23#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +45,8 @@
       <file leaf-file-name="ResetPasswordSpecs.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/ResetPasswordSpecs.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="1296">
+              <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
               <folding>
                 <element signature="e#23#59#0" expanded="true" />
               </folding>
@@ -88,6 +60,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Scala Worksheet" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -115,6 +88,7 @@
         <option value="$PROJECT_DIR$/src/test/scala-2.11/pages/LoginSpecs.scala" />
         <option value="$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/LoginSpecs.scala" />
         <option value="$PROJECT_DIR$/src/test/scala-2.11/pages/SignInPage.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala-2.11/pages/ResetPasswordPage.scala" />
         <option value="$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/ResetPasswordSpecs.scala" />
       </list>
     </option>
@@ -311,74 +285,17 @@
       </pane>
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="ignore_missing_gitignore" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pages" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton">
-    <configuration default="false" name="LoginSpecs.The DataSources authorization should invalidLogin" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="scala-test-learning" />
-      <setting name="path" value="selenium.auth.LoginSpecs" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="The DataSources authorization should invalidLogin" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="LoginSpecs" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="scala-test-learning" />
-      <setting name="path" value="selenium.auth.LoginSpecs" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="LoginSpecs.The DataSources authorization should invalidPassword" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="scala-test-learning" />
-      <setting name="path" value="selenium.auth.LoginSpecs" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="The DataSources authorization should invalidPassword" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="LoginSpecs.The DataSources authorization should signIn&#10;The DataSources authorization should invalidLogin&#10;The DataSources authorization should invalidPassword&#10;The DataSources authorization should emailFieldIsRequired&#10;The DataSources authorization should passwordFieldIsRequired" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="scala-test-learning" />
-      <setting name="path" value="selenium.auth.LoginSpecs" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="The DataSources authorization should signIn&#10;The DataSources authorization should invalidLogin&#10;The DataSources authorization should invalidPassword&#10;The DataSources authorization should emailFieldIsRequired&#10;The DataSources authorization should passwordFieldIsRequired" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+  <component name="RunManager" selected="ScalaTest.ResetPasswordSpecs.Forgot password page should generatePassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should resetPassword&#10;Forgot password page should inactiveSendButton">
+    <configuration default="false" name="ResetPasswordSpecs.Forgot password page should generatePassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should resetPassword&#10;Forgot password page should inactiveSendButton" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="scala-test-learning" />
       <setting name="path" value="selenium.auth.ResetPasswordSpecs" />
@@ -387,7 +304,7 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" />
+      <setting name="testName" value="Forgot password page should generatePassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should resetPassword&#10;Forgot password page should inactiveSendButton" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <envs />
@@ -685,20 +602,12 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs.The DataSources authorization should invalidLogin" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs.The DataSources authorization should invalidPassword" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs.The DataSources authorization should signIn&#10;The DataSources authorization should invalidLogin&#10;The DataSources authorization should invalidPassword&#10;The DataSources authorization should emailFieldIsRequired&#10;The DataSources authorization should passwordFieldIsRequired" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.ResetPasswordSpecs.Forgot password page should generatePassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should resetPassword&#10;Forgot password page should inactiveSendButton" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs.The DataSources authorization should signIn&#10;The DataSources authorization should invalidLogin&#10;The DataSources authorization should invalidPassword&#10;The DataSources authorization should emailFieldIsRequired&#10;The DataSources authorization should passwordFieldIsRequired" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs.The DataSources authorization should invalidPassword" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs.The DataSources authorization should invalidLogin" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.LoginSpecs" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.ResetPasswordSpecs.Forgot password page should generatePassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should resetPassword&#10;Forgot password page should inactiveSendButton" />
       </list>
     </recent_temporary>
   </component>
@@ -757,35 +666,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginSpecs - 2016.08.31 at 17h 25m 28s.xml">
-      <configuration name="LoginSpecs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 16h 51m 27s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="LoginSpecs_The_DataSources_authorization_should_invalidLogin - 2016.08.31 at 17h 16m 22s.xml">
-      <configuration name="LoginSpecs.The DataSources authorization should invalidLogin" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 16m 05s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="LoginSpecs_The_DataSources_authorization_should_invalidLogin - 2016.08.31 at 17h 31m 11s.xml">
-      <configuration name="LoginSpecs.The DataSources authorization should invalidLogin" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 19m 46s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="LoginSpecs_The_DataSources_authorization_should_invalidPassword - 2016.08.31 at 17h 32m 14s.xml">
-      <configuration name="LoginSpecs.The DataSources authorization should invalidPassword" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 25m 28s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="LoginSpecs_The_DataSources_authorization_should_invalidPassword - 2016.08.31 at 17h 33m 50s.xml">
-      <configuration name="LoginSpecs.The DataSources authorization should invalidPassword" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 27m 27s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="LoginSpecs_The_DataSources_authorization_should_signIn_The_DataSources_authorization_must_invalidLogin - 2016.08.31 at 17h 22m 56s.xml">
-      <configuration name="LoginSpecs.The DataSources authorization should signIn&#10;The DataSources authorization must invalidLogin" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 28m 59s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="LoginSpecs_The_DataSources_authorization_should_signIn_The_DataSources_authorization_should_invalidLogin - 2016.08.31 at 17h 15m 04s.xml">
-      <configuration name="LoginSpecs.The DataSources authorization should signIn&#10;The DataSources authorization should invalidLogin" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 29m 39s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_resetPassword_Forgot_password_page_should_notIdenticalPasswords_Forgot_password_page_should_generatePassword_Forgot_password_page_should_inactiveSendButton - 2016.08.31 at 17h 49m 33s.xml">
-      <configuration name="ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 17h 31m 04s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_resetPassword_Forgot_password_page_should_notIdenticalPasswords_Forgot_password_page_should_generatePassword_Forgot_password_page_should_inactiveSendButton - 2016.08.31 at 18h 14m 54s.xml">
-      <configuration name="ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword - 2016.09.01 at 18h 08m 33s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_resetPassword_Forgot_password_page_should_notIdenticalPasswords_Forgot_password_page_should_generatePassword_Forgot_password_page_should_inactiveSendButton - 2016.08.31 at 18h 45m 04s.xml">
-      <configuration name="ResetPasswordSpecs.Forgot password page should resetPassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should generatePassword&#10;Forgot password page should inactiveSendButton" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="ResetPasswordSpecs_Forgot_password_page_should_generatePassword_Forgot_password_page_should_notIdenticalPasswords_Forgot_password_page_should_resetPassword_Forgot_password_page_should_inactiveSendButton - 2016.09.01 at 18h 10m 44s.xml">
+      <configuration name="ResetPasswordSpecs.Forgot password page should generatePassword&#10;Forgot password page should notIdenticalPasswords&#10;Forgot password page should resetPassword&#10;Forgot password page should inactiveSendButton" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -801,8 +710,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5385417" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28333333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24820343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -878,7 +787,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#23#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,6 +918,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.0-sources.jar!/org/scalatest/FlatSpecLike.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="618" column="16" selection-start-line="618" selection-start-column="16" selection-end-line="618" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/pages/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/LoginSpecs.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="e#23#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/pages/SignInPage.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/pages/ResetPasswordPage.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/utils/Utils.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1023,34 +976,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.0-sources.jar!/org/scalatest/FlatSpecLike.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="618" column="16" selection-start-line="618" selection-start-column="16" selection-end-line="618" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/LoginSpecs.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/pages/SignInPage.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="153" selection-start-line="23" selection-start-column="153" selection-end-line="23" selection-end-column="153" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala-2.11/selenium/auth/ResetPasswordSpecs.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="1296">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
           <folding>
             <element signature="e#23#59#0" expanded="true" />
           </folding>

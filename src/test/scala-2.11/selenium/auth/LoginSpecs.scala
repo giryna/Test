@@ -17,8 +17,10 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
   val USER_EMAIL: String = "gavrilyuk.iryna@gmail.com"
   val USER_PASS: String = "gavrilyuk.iryna@gmail.com"
 
-  val BASE_URL: String = "http://alpha2.dsources.com/"
-  val PROFILE_URL: String = "http://alpha2.dsources.com/#/profile"
+
+
+  val INVALID_PASSWORD: String = "NegativeTestCase"
+  val INVALID_PASSWORD_1: String = "invalidPasswordwith@tratata"
 
   "The DataSources authorization" should "signIn" in {
     signIn()
@@ -28,8 +30,10 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     invalidLogin()
   }
 
+
   it should "invalidPassword" in {
-    invalidPassword()
+    invalidPassword(INVALID_PASSWORD)
+    invalidPassword(INVALID_PASSWORD_1)
   }
   it should "emailFieldIsRequired" in {
     emailFieldIsRequired()
@@ -40,7 +44,7 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
   before {
     Utils.initialize()
     driver = new ChromeDriver()
-    selenium = new WebDriverBackedSelenium(driver, BASE_URL)
+    selenium = new WebDriverBackedSelenium(driver, SignInPage.Urls.BASE_URL)
   }
 
   after {
@@ -60,15 +64,15 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     selenium.click(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON)
     Thread.sleep(2000)
     println("URL for \"Profile page\" (after success login) " + driver.getCurrentUrl)
-    driver.getCurrentUrl should be(PROFILE_URL)
+    driver.getCurrentUrl should be(SignInPage.Urls.PROFILE_URL)
     //    driver.findElement(SignInPage.XPATH_SELECTOR_LOGOUT_BUTTON).click()
     //    Thread.sleep(1000)
   }
 
-  def invalidPassword() = {
+  def invalidPassword(password: String) = {
     selenium.open(SignInPage.Urls.SIGN_IN_PAGE_TAG_URL)
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_EMAIL, USER_EMAIL)
-    selenium.input(SignInPage.TYPE_SELECTOR_INPUT_PASSWORD, "NegativeTestCase")
+    selenium.input(SignInPage.TYPE_SELECTOR_INPUT_PASSWORD, password)
     selenium.click(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON)
     Thread.sleep(3000)
     val elem = driver.findElement(SignInPage.XPATH_SELECTOR_INCORRECT_LOGIN_PASS_MESSAGE)
