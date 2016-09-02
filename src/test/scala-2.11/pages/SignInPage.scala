@@ -1,10 +1,16 @@
 package pages
 
-import org.openqa.selenium.By
+import org.openqa.selenium.{By, WebDriver}
 
 /**
   * Created by iryna on 31.08.16.
   */
+class SignInPage(webDriver: WebDriver) {
+
+  val generatePasswordButton = webDriver.findElement(SignInPage.XPATH_SELECTOR_GENERATE_PASSWORD_BUTTON)
+  val signInButton = webDriver.findElement(By.id(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON))
+}
+
 object SignInPage {
 
   val XPATH_SELECTOR_SIGN_IN_FORM_HEADER: By = By.xpath("//*[contains(text(), \"Sign \")]")
@@ -25,5 +31,7 @@ object SignInPage {
     val BASE_URL: String = "http://alpha2.dsources.com/"
     val PROFILE_URL: String = "http://alpha2.dsources.com/#/profile"
   }
+
+  def apply(webDriver: WebDriver) = new SignInPage(webDriver)
 
 }

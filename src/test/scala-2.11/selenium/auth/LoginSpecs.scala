@@ -22,6 +22,8 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
   val INVALID_PASSWORD: String = "NegativeTestCase"
   val INVALID_PASSWORD_1: String = "invalidPasswordwith@tratata"
 
+  var signInPage: SignInPage = _
+
   "The DataSources authorization" should "signIn" in {
     signIn()
   }
@@ -44,7 +46,9 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
   before {
     Utils.initialize()
     driver = new ChromeDriver()
-    selenium = new WebDriverBackedSelenium(driver, SignInPage.Urls.BASE_URL)
+    val webDriver = new WebDriverBackedSelenium(driver, SignInPage.Urls.BASE_URL)
+    selenium = webDriver
+    signInPage = new SignInPage(webDriver.getWrappedDriver())
   }
 
   after {
@@ -73,7 +77,7 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     selenium.open(SignInPage.Urls.SIGN_IN_PAGE_TAG_URL)
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_EMAIL, USER_EMAIL)
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_PASSWORD, password)
-    selenium.click(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON)
+    signInPage.signInButton.click()
     Thread.sleep(3000)
     val elem = driver.findElement(SignInPage.XPATH_SELECTOR_INCORRECT_LOGIN_PASS_MESSAGE)
     println("Error message for incorrect login or password - " + elem.getText)
