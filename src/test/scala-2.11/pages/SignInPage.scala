@@ -7,8 +7,8 @@ import org.openqa.selenium.{By, WebDriver}
   */
 class SignInPage(webDriver: WebDriver) {
 
-  val generatePasswordButton = webDriver.findElement(SignInPage.XPATH_SELECTOR_GENERATE_PASSWORD_BUTTON)
-  val signInButton = webDriver.findElement(By.id(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON))
+  lazy val generatePasswordButton = webDriver.findElement(SignInPage.XPATH_SELECTOR_GENERATE_PASSWORD_BUTTON)
+  lazy val signInButton = webDriver.findElement(By.id(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON))
 }
 
 object SignInPage {

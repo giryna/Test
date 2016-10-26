@@ -1,8 +1,11 @@
 package selenium.auth
 
+import java.net.URL
+
 import com.thoughtworks.selenium.Selenium
 import extensions.SeleniumExtensions._
 import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.remote.{DesiredCapabilities, RemoteWebDriver}
 import org.openqa.selenium.{WebDriver, WebDriverBackedSelenium}
 import org.scalatest._
 import org.scalatest.selenium.WebBrowser
@@ -12,12 +15,15 @@ import utils.Utils
 /**
   * Created by iryna on 25.08.16.
   */
-class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAfter {
+class LoginSpecs
+    extends FlatSpec
+    with Matchers
+    with WebBrowser
+    with BeforeAndAfter
+    with ParallelTestExecution {
 
   val USER_EMAIL: String = "gavrilyuk.iryna@gmail.com"
   val USER_PASS: String = "gavrilyuk.iryna@gmail.com"
-
-
 
   val INVALID_PASSWORD: String = "NegativeTestCase"
   val INVALID_PASSWORD_1: String = "invalidPasswordwith@tratata"
@@ -32,10 +38,9 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     invalidLogin()
   }
 
-
   it should "invalidPassword" in {
     invalidPassword(INVALID_PASSWORD)
-    invalidPassword(INVALID_PASSWORD_1)
+    //invalidPassword(INVALID_PASSWORD_1)
   }
   it should "emailFieldIsRequired" in {
     emailFieldIsRequired()
@@ -44,15 +49,28 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     passwordFieldIsRequired()
   }
   before {
-    Utils.initialize()
-    driver = new ChromeDriver()
-    val webDriver = new WebDriverBackedSelenium(driver, SignInPage.Urls.BASE_URL)
+    //Utils.initialize()
+    System.setProperty("webdriver.gecko.driver",
+                       "home/iryna/SeleniumGrid/geckodriver.exe")
+    val capabilities: DesiredCapabilities = DesiredCapabilities.firefox()
+    capabilities.setBrowserName("firefox")
+    //        capabilities.setVersion("45.0.2");
+    //driver = new ChromeDriver()
+    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
+                                 capabilities)
+    // val webDriver = driver.navigate().to(SignInPage.Urls.BASE_URL)
+    val webDriver: WebDriverBackedSelenium =
+      new WebDriverBackedSelenium(driver, SignInPage.Urls.BASE_URL)
     selenium = webDriver
-    signInPage = new SignInPage(webDriver.getWrappedDriver())
+    signInPage = new SignInPage(webDriver.getWrappedDriver)
+
   }
 
   after {
-    driver.close()
+//    if (driver != null) {
+//      driver.quit
+//    }
+    driver.quit()
   }
 
   implicit var driver: WebDriver = _
@@ -63,11 +81,13 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_EMAIL, USER_EMAIL)
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_PASSWORD, USER_PASS)
 
-    val elem = driver.findElement(SignInPage.XPATH_SELECTOR_SIGN_IN_FORM_HEADER)
+    val elem =
+      driver.findElement(SignInPage.XPATH_SELECTOR_SIGN_IN_FORM_HEADER)
     println("Test for \"" + elem.getText + "\" page is completed.")
     selenium.click(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON)
     Thread.sleep(2000)
-    println("URL for \"Profile page\" (after success login) " + driver.getCurrentUrl)
+    println(
+      "URL for \"Profile page\" (after success login) " + driver.getCurrentUrl)
     driver.getCurrentUrl should be(SignInPage.Urls.PROFILE_URL)
     //    driver.findElement(SignInPage.XPATH_SELECTOR_LOGOUT_BUTTON).click()
     //    Thread.sleep(1000)
@@ -77,9 +97,10 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     selenium.open(SignInPage.Urls.SIGN_IN_PAGE_TAG_URL)
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_EMAIL, USER_EMAIL)
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_PASSWORD, password)
-    signInPage.signInButton.click()
-    Thread.sleep(3000)
-    val elem = driver.findElement(SignInPage.XPATH_SELECTOR_INCORRECT_LOGIN_PASS_MESSAGE)
+    selenium.click(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON)
+    Thread.sleep(2000)
+    val elem = driver.findElement(
+      SignInPage.XPATH_SELECTOR_INCORRECT_LOGIN_PASS_MESSAGE)
     println("Error message for incorrect login or password - " + elem.getText)
     elem.getText should be("Invalid Email or password")
   }
@@ -90,8 +111,10 @@ class LoginSpecs extends FlatSpec with Matchers with WebBrowser with BeforeAndAf
     selenium.input(SignInPage.TYPE_SELECTOR_INPUT_PASSWORD, USER_PASS)
     selenium.click(SignInPage.ID_SELECTOR_SIGN_IN_BUTTON)
     Thread.sleep(3000)
-    val elem = driver.findElement(SignInPage.XPATH_SELECTOR_INCORRECT_LOGIN_PASS_MESSAGE)
-    println("Error message for incorrect login is displayed - " + elem.isDisplayed)
+    val elem = driver.findElement(
+      SignInPage.XPATH_SELECTOR_INCORRECT_LOGIN_PASS_MESSAGE)
+    println(
+      "Error message for incorrect login is displayed - " + elem.isDisplayed)
     elem.isDisplayed should be(true)
   }
 

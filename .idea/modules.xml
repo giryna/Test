@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-test-learning.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-test-learning.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-test-learning-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-test-learning-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds-selenium.iml" filepath="$PROJECT_DIR$/.idea/modules/ds-selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ds-selenium-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ds-selenium-build.iml" />
     </modules>
   </component>
 </project>
