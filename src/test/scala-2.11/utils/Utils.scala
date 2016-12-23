@@ -6,7 +6,7 @@ package utils
 object Utils {
 
   def initialize(): String = {
-    System.setProperty("webdriver.chrome.driver", "/home/iryna/seleniumdrivers/chromedriver")
+    System.setProperty("webdriver.chrome.driver", "/home/iryna/SeleniumGrid/chromedriver")
   }
 
 }

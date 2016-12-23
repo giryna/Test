@@ -1,0 +1,57 @@
+[0m[[0minfo[0m] [0m[32mLoginSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe DataSources authorization[0m[0m
+[0m[[0minfo[0m] [0m[31mselenium.auth.LoginSpecs *** ABORTED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.[0m[0m
+[0m[[0minfo[0m] [0m[31mBuild info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'[0m[0m
+[0m[[0minfo[0m] [0m[31mSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-53-generic', java.version: '1.8.0_111'[0m[0m
+[0m[[0minfo[0m] [0m[31mDriver info: driver.version: ChromeDriver[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:115)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:161)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at selenium.auth.LoginSpecs$$anonfun$1.apply$mcV$sp(LoginSpecs.scala:37)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at selenium.auth.LoginSpecs$$anonfun$1.apply(LoginSpecs.scala:35)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at selenium.auth.LoginSpecs$$anonfun$1.apply(LoginSpecs.scala:35)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.BeforeAndAfter$class.runTest(BeforeAndAfter.scala:200)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m  Cause: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:20162 refused[0m[0m
+[0m[[0minfo[0m] [0m[31mBuild info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'[0m[0m
+[0m[[0minfo[0m] [0m[31mSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-53-generic', java.version: '1.8.0_111'[0m[0m
+[0m[[0minfo[0m] [0m[31mDriver info: driver.version: ChromeDriver[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:75)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:115)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:161)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at selenium.auth.LoginSpecs$$anonfun$1.apply$mcV$sp(LoginSpecs.scala:37)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at selenium.auth.LoginSpecs$$anonfun$1.apply(LoginSpecs.scala:35)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at selenium.auth.LoginSpecs$$anonfun$1.apply(LoginSpecs.scala:35)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m  Cause: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:20162 refused[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:337)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:298)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m  Cause: java.net.ConnectException: Connection refused (Connection refused)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.net.PlainSocketImpl.socketConnect(Native Method)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.net.Socket.connect(Socket.java:589)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
